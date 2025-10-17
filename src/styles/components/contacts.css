@@ -1,0 +1,98 @@
+.contacts {
+  padding: 150px 0;
+  background-color: #fff;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__container {
+  display: flex;
+  align-items: center;
+  gap: 91px;
+}
+
+.contacts__description {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.contacts__description-text {
+  h2 {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  p {
+    color: #181818;
+  }
+}
+
+.contacts__description-info {
+  color: #181818;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.contacts__info-icontext {
+  display: flex;
+  gap: 16px;
+}
+
+.info-icontext__p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contacts__form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  gap: 24px;
+}
+
+.form__label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  color: #181818;
+}
+
+.form__input {
+  border-radius: 54px;
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  padding: 22px 33px;
+}
+
+.input-message {
+  border: 1px solid #c1c1c1;
+  width: 100%;
+  border-radius: 22px;
+  background-color: #fff;
+  padding: 22px 70px 111px 33px;
+}
+
+.label-input__message {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-button {
+  border-radius: 42px;
+  background-color: #181818;
+  padding: 16px;
+  width: 25%;
+}
