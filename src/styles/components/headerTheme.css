@@ -1,0 +1,50 @@
+.theme-header {
+  background-image: url('./src/assets/images/headerThemeBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 620px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-header__text-container {
+  backdrop-filter: blur(11px);
+  background: rgb(255 255 255 / 85%);
+  border-radius: 29px;
+  width: 60%;
+  height: 267px;
+  display: flex;
+  align-items: start;
+  gap: 21px;
+  padding: 48px 60px 58px;
+  flex-direction: column;
+}
+
+.theme-header__title-container {
+  background: #ffcc4a;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.theme-header__tilte {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+.theme-header__text {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 116%;
+  color: #181818;
+}
