@@ -39,7 +39,7 @@
   color: #4eaf4e;
 }
 
-.nav__link_focus:focus {
+.nav__link:focus {
   color: #4eaf4e;
 }
 

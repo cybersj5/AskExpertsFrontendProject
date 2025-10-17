@@ -7,4 +7,8 @@
 @import './styles/components/nav.css';
 @import './styles/components/footer.css';
 @import './styles/components/page.css';
+@import './styles/components/headerTheme.css';
+@import './styles/components/services.css';
+@import './styles/components/process.css';
+@import './styles/components/prices.css';
 @import './styles/components/contacts.css';

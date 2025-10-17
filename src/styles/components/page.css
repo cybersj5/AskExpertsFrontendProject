@@ -6,6 +6,7 @@
 
 .page__content {
   flex-grow: 1;
+  gap: 100px;
 }
 
 .page__header {

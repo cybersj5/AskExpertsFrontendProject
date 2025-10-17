@@ -1,0 +1,101 @@
+.services {
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding: 170px 0;
+}
+
+.services__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.services__title-container {
+  background: #4eaf4e;
+  border-radius: 20px;
+  padding: 0 16px;
+}
+
+.services__text-container {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.services__text {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 116%;
+  text-align: center;
+  color: #181818;
+}
+
+.cards__container {
+  border-spacing: 20px 20px;
+  border-collapse: separate;
+}
+
+.service-card {
+  background: #ebebeb;
+  border-radius: 20px;
+  padding: 49px 47px;
+  width: 387px;
+  height: 324px;
+  align-items: start;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  background: #181818;
+}
+
+.service-card:focus {
+  background: #181818;
+}
+
+.service-card:hover span {
+  color: #fff;
+}
+
+.service-card:focus span {
+  color: #fff;
+}
+
+.service-card:hover p {
+  color: #fff;
+}
+
+.service-card:focus p {
+  color: #fff;
+}
+
+.service-card__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 116%;
+  color: #181818;
+  padding-top: 25px;
+}
+
+.service-card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: #595566;
+}

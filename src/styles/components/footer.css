@@ -73,6 +73,14 @@
   list-style: disc;
 }
 
+.footer__information-link {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
 .footer__address-text {
   font-weight: 400;
   font-size: 16px;
