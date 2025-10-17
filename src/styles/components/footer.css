@@ -48,6 +48,8 @@
   text-decoration: none;
   color: white;
   font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .footer__address-button-container {
@@ -69,12 +71,6 @@
   padding-left: 8px;
   align-items: start;
   list-style: disc;
-}
-
-.footer__information-link {
-  font-weight: 400;
-  font-size: 16px;
-  font-family: Lato, sans-serif;
 }
 
 .footer__address-text {
