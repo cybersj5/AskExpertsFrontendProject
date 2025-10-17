@@ -44,12 +44,6 @@
   gap: 10px;
 }
 
-.footer__information-link {
-  text-decoration: none;
-  color: white;
-  font-family: Lato, sans-serif;
-}
-
 .footer__address-button-container {
   display: flex;
   flex-direction: column;
@@ -75,6 +69,8 @@
   font-weight: 400;
   font-size: 16px;
   font-family: Lato, sans-serif;
+  text-decoration: none;
+  color: white;
 }
 
 .footer__address-text {
