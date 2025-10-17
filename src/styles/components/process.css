@@ -1,9 +1,8 @@
 .process {
-  height: 1000px;
   background: #fff;
   display: flex;
   align-items: center;
-  padding: 170px 0;
+  padding: 150px 0;
 }
 
 .process__wrapper {
