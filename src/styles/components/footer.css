@@ -1,0 +1,118 @@
+.footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+  
+  flex-direction: column;
+}
+
+.footer {
+  padding: 115px 0 26px 0;
+  background-color: #181818;
+}
+
+.footer__top-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: row;
+  border-bottom: 1px solid grey;
+  padding-bottom: 55px;
+}
+
+.footer__contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 171px;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer__information-container{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 99px;
+  border-left: 1px solid grey;
+  padding-left: 171px;
+}
+
+.footer__information-column{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.footer__information-link{
+  text-decoration: none;
+  color: white;
+  font-family: Lato, sans-serif;
+}
+
+.footer__address-button-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.footer__information-title{
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer__information-list{
+  margin: 0;
+  padding-left: 8px;
+  align-items: start;
+  list-style: disc;
+}
+
+.footer__information-link{
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+}
+
+.footer__address-text{
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+}
+
+.footer__button-book{
+  border-radius: 42px;
+  padding: 15px 23px;
+  background: #fff;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Lato, sans-serif;
+}
+
+.footer__yellow-line{
+  border-radius: 20px;
+  width: 31px;
+  height: 3px;
+  background: #ffcc4a;
+}
+
+.footer__bottom-container{
+  display: flex;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer__text-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+}
