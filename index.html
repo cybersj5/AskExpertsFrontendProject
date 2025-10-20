@@ -13,11 +13,18 @@
   --color-secondary: var(--color-black);
 }
     </style>
-    <style media="(prefers-color-scheme: dark)">:root {
+    <style media="(prefers-color-scheme: dark)">[data-theme='dark'] {
   color-scheme: dark;
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+  --background-grey: var(--color-black);
+  --background-white: var(--color-dark-grey);
+  --bacground-limpid-white: rgb(35 35 35 / 70%);
+  --dark-text-primary: var(--color-white);
+  --light-text-primary: var(--color-white);
+  --description-primary: var(--color-dark-white);
+  --card-background: var(--color-dark-grey);
+  --card-background-focus: var(--color-green);
+  --black-button: var(--color-dark-grey);
 }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/AskExperts-frontend-project/assets/index-C3a5rzyZ.css">
+    <link rel="stylesheet" crossorigin href="/AskExperts-frontend-project/assets/index-D39eio-p.css">
   </head>
   <body>
     <div class="page">
@@ -48,7 +55,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <span>Monday - Friday 8AM - 9PM</span>
+              <span class="header__text">Monday - Friday 8AM - 9PM</span>
             </div>
             <div class="header__icon-text">
               <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,6 +113,9 @@
                   />
                 </svg>
               </a>
+              <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+                <span class="theme-toggle__icon">🌙</span>
+              </button>
             </div>
           </div>
         </div>
@@ -533,9 +543,9 @@
                     <rect x="7.56934" y="9.95361" width="13.8699" height="1.55035" rx="0.775175" fill="#1B1B1B" />
                     <rect x="7.56934" y="6.37305" width="13.8699" height="1.55035" rx="0.775175" fill="#1B1B1B" />
                   </svg>
-                  <span>AskExperts</span>
+                  <span class="footer__span">AskExperts</span>
                 </div>
-                <span>Fb./Ig./Tw./Be.</span>
+                <span class="footer__span">Fb./Ig./Tw./Be.</span>
               </div>
               <div class="footer__information-container">
                 <div class="footer__information-column">
@@ -604,5 +614,6 @@
         </div>
       </footer>
     </div>
+    <script src="/src/scripts/theme-toggle.js"></script>
   </body>
 </html>
