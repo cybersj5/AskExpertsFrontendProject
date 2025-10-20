@@ -1,6 +1,6 @@
 .header {
   padding: 18px 0;
-  background-color: #181818;
+  background-color: var(--color-black);
 }
 
 .header__wrapper {
@@ -17,6 +17,7 @@
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 14px;
+  color: var(--color-white);
 }
 
 .header__socials {
@@ -24,4 +25,9 @@
   gap: 25px;
   align-items: center;
   display: flex;
+}
+
+.theme-toggle {
+  border-radius: 20px;
+  border: none;
 }

@@ -6,7 +6,7 @@
 
 .footer {
   padding: 115px 0 26px;
-  background-color: #181818;
+  background-color: var(--color-black);
 }
 
 .footer__top-container {
@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: start;
   flex-direction: row;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--color-grey);
   padding-bottom: 55px;
 }
 
@@ -26,6 +26,7 @@
   font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 20px;
+  color: var(--color-white);
 }
 
 .footer__information-container {
@@ -33,7 +34,7 @@
   flex-direction: row;
   align-items: start;
   gap: 99px;
-  border-left: 1px solid grey;
+  border-left: 1px solid var(--color-grey);
   padding-left: 171px;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .footer__information-title {
-  color: white;
+  color: var(--color-white);
   font-family: Lato, sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -63,6 +64,7 @@
   padding-left: 8px;
   align-items: start;
   list-style: disc;
+  color: var(--color-white);
 }
 
 .footer__information-link {
@@ -70,20 +72,21 @@
   font-size: 16px;
   font-family: Lato, sans-serif;
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 .footer__address-text {
   font-weight: 400;
   font-size: 16px;
   font-family: Lato, sans-serif;
+  color: var(--color-white);
 }
 
 .footer__button-book {
   border-radius: 42px;
   padding: 15px 23px;
-  background: #fff;
-  color: black;
+  background: var(--color-white);
+  color: var(--color-black);
   font-size: 18px;
   font-weight: 600;
   font-family: Lato, sans-serif;
@@ -93,7 +96,7 @@
   border-radius: 20px;
   width: 31px;
   height: 3px;
-  background: #ffcc4a;
+  background: var(--color-yellow);
 }
 
 .footer__bottom-container {
@@ -110,4 +113,5 @@
   font-weight: 400;
   font-size: 16px;
   font-family: Lato, sans-serif;
+  color: var(--color-white);
 }

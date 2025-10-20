@@ -1,5 +1,5 @@
 .prices {
-  background: #f5f5f5;
+  background: var(--background-grey);
   display: flex;
   align-items: center;
   padding: 150px 0;
@@ -13,7 +13,7 @@
 }
 
 .prices-title__container {
-  background: #4eaf4e;
+  background: var(--color-green);
   border-radius: 20px;
   padding: 0 14px;
 }
@@ -23,7 +23,7 @@
   font-size: 45px;
   line-height: 116%;
   text-align: center;
-  color: #181818;
+  color: var(--dark-text-primary);
   padding-top: 22px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .price__plan {
-  background: #fff;
+  background: var(--card-background);
   border-radius: 20px;
   padding: 21px 22px 40px;
 }
@@ -58,14 +58,14 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 116%;
-  color: #fff;
+  color: var(--light-text-primary);
 }
 
 .plan__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 148%;
-  color: #fff;
+  color: var(--light-text-primary);
   padding-top: 20px;
 }
 
@@ -83,11 +83,11 @@
   font-size: 50px;
   line-height: 116%;
   text-align: center;
-  color: #fff;
+  color: var(--light-text-primary);
 }
 
 .plan-period__container {
-  background: #3e3e3e;
+  background: var(--color-grey);
   border-radius: 20px;
   padding: 0 16px;
 }
@@ -98,7 +98,7 @@
   line-height: 148%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .plan__body {
@@ -120,7 +120,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 252%;
-  color: #595566;
+  color: var(--description-primary);
 }
 
 .plan__bottom {
@@ -129,19 +129,19 @@
 }
 
 .plan__button {
-  border: 1px solid #d6d6d6;
+  border: 1px solid var(--color-grey);
   border-radius: 42px;
   padding: 15px 109px;
   font-weight: 600;
   font-size: 18px;
   line-height: 160%;
-  color: #181818;
+  color: var(--dark-text-primary);
 }
 
 .price__plan:hover button {
-  background: #ffcc4a;
+  background: var(--color-yellow);
 }
 
 .price__plan:hover .plan-period__container {
-  background: #4eaf4e;
+  background: var(--color-green);
 }

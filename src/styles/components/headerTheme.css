@@ -16,7 +16,7 @@
 
 .theme-header__text-container {
   backdrop-filter: blur(11px);
-  background: rgb(255 255 255 / 85%);
+  background: var(--bacground-limpid-white);
   border-radius: 29px;
   display: flex;
   align-items: start;
@@ -26,7 +26,7 @@
 }
 
 .theme-header__title-container {
-  background: #ffcc4a;
+  background: var(--color-yellow);
   border-radius: 20px;
   padding: 0 15px;
 }
@@ -37,12 +37,12 @@
   line-height: 148%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #181818;
+  color: var(--color-black);
 }
 
 .theme-header__text {
   font-weight: 700;
   font-size: 50px;
   line-height: 116%;
-  color: #181818;
+  color: var(--dark-text-primary);
 }

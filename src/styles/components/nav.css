@@ -1,7 +1,7 @@
 .nav {
   padding: 40px 0;
   backdrop-filter: blur(21px);
-  background: rgb(27 27 27 / 91%);
+  background: var(--color-dark-grey);
 }
 
 .nav__wrapper {
@@ -18,17 +18,19 @@
   font-weight: 600;
   font-size: 30px;
   font-family: Lato, sans-serif;
+  color: var(--color-white);
 }
 
 .nav__list {
   display: flex;
   list-style: circle;
   gap: 60px;
+  color: var(--color-white);
 }
 
 .nav__link {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
   transition: color 0.3s ease;
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -36,23 +38,23 @@
 }
 
 .nav__link:hover {
-  color: #4eaf4e;
+  color: var(--color-green);
 }
 
 .nav__link:focus {
-  color: #4eaf4e;
+  color: var(--color-green);
 }
 
 .nav__contact-container {
   border-radius: 42px;
   padding: 8px 41px 8px 10px;
   height: 59px;
-  background: #fff;
+  background: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  color: black;
+  color: var(--color-black);
   gap: 11px;
   font-family: Lato, sans-serif;
   font-weight: bold;
