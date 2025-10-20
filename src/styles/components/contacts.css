@@ -1,6 +1,6 @@
 .contacts {
   padding: 150px 0;
-  background-color: #fff;
+  background-color: var(--background-white);
 }
 
 .contacts__wrapper {
@@ -22,18 +22,18 @@
 
 .contacts__description-text {
   h2 {
-    color: #181818;
+    color: var(--dark-text-primary);
     font-size: 45px;
     font-weight: 700;
   }
 
   p {
-    color: #181818;
+    color: var(--dark-text-primary);
   }
 }
 
 .contacts__description-info {
-  color: #181818;
+  color: var(--dark-text-primary);
   display: flex;
   flex-direction: column;
   gap: 56px;
@@ -67,21 +67,21 @@
 }
 
 .form__label {
-  color: #181818;
+  color: var(--dark-text-primary);
 }
 
 .form__input {
   border-radius: 54px;
-  background-color: #fff;
-  border: 1px solid #c1c1c1;
+  background-color: var(--background-white);
+  border: 1px solid var(--color-light-grey);
   padding: 22px 33px;
 }
 
 .input-message {
-  border: 1px solid #c1c1c1;
+  border: 1px solid var(--color-light-grey);
   width: 100%;
   border-radius: 22px;
-  background-color: #fff;
+  background-color: var(--background-white);
   padding: 22px 70px 111px 33px;
 }
 
@@ -92,7 +92,8 @@
 
 .send-button {
   border-radius: 42px;
-  background-color: #181818;
+  background-color: var(--black-button);
   padding: 16px;
   width: 25%;
+  color: var(--light-text-primary);
 }

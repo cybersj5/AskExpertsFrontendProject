@@ -1,5 +1,5 @@
 .process {
-  background: #fff;
+  background: var(--background-white);
   display: flex;
   align-items: center;
   padding: 150px 0;
@@ -20,7 +20,7 @@
 }
 
 .process-title__container {
-  background: #ffcc4a;
+  background: var(--color-yellow);
   border-radius: 20px;
   padding: 0 16px;
 }
@@ -31,14 +31,14 @@
   line-height: 148%;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #181818;
+  color: var(--dark-text-primary);
 }
 
 .process__text {
   font-weight: 700;
   font-size: 45px;
   line-height: 116%;
-  color: #181818;
+  color: var(--dark-text-primary);
   padding-bottom: 18px;
 }
 
@@ -59,12 +59,12 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 116%;
-  color: #181818;
+  color: var(--dark-text-primary);
 }
 
 .step__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 148%;
-  color: #595566;
+  color: var(--description-primary);
 }
