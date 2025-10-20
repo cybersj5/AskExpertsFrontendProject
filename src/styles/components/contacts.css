@@ -4,8 +4,10 @@
 .contacts {
   /* padding: 150px 0; /* Заменяем на относительное значение */
   padding-block: clamp(5rem, 15vw, 10rem); /* Отступы сверху и снизу: от 5rem до 10rem в зависимости от ширины экрана */
-  background-color: #fff; /* Цвет фона остался без изменений */
-  color: #181818; /* Цвет текста по умолчанию */
+  
+  
+  
+  background-color: var(--background-white);
 }
 
 .contacts__wrapper {
@@ -39,8 +41,8 @@
 }
 
 .contacts__description-text h2 {
-  color: #181818; /* Цвет остался без изменений */
-
+ 
+  color: var(--dark-text-primary);
   /* font-size: 45px; /* Заменяем на относительное значение */
   font-size: clamp(1.75rem, 4vw, 2.8125rem); /* Адаптивный размер шрифта */
   font-weight: 700;
@@ -48,12 +50,12 @@
 }
 
 .contacts__description-text p {
-  color: #181818; /* Цвет остался без изменений */
+  color: var(--dark-text-primary);
   margin-block: 0.625rem; /* Заменяем margin: 10px 0 на относительное значение */
 }
 
 .contacts__description-info {
-  color: #181818; /* Цвет остался без изменений */
+ color: var(--dark-text-primary);
   display: flex;
   flex-direction: column;
 
@@ -113,7 +115,7 @@
 }
 
 .form__label {
-  color: #181818; /* Цвет остался без изменений */
+  color: var(--dark-text-primary);
 
   /* margin-bottom: 8px; /* Заменяем на относительное значение */
   margin-block-end: 0.5rem; /* Отступ между лейблом и инпутом */
@@ -122,8 +124,8 @@
 .form__input {
   /* border-radius: 54px; /* Заменяем на относительное значение */
   border-radius: 3.375rem; /* Используем rem для скругления */
-  background-color: #fff; /* Цвет фона остался без изменений */
-  border: 1px solid #c1c1c1; /* Цвет бордера остался без изменений */
+  background-color: var(--background-white);
+  border: 1px solid var(--color-light-grey);
 
   /* padding: 22px 33px; /* Заменяем на относительное значение */
   padding: 1.375rem 2.0625rem; /* Используем rem для внутренних отступов */
@@ -142,12 +144,12 @@
 }
 
 .input-message {
-  border: 1px solid #c1c1c1; /* Цвет бордера остался без изменений */
+  border: 1px solid var(--color-light-grey);
   width: 100%;
 
   /* border-radius: 22px; /* Заменяем на относительное значение */
   border-radius: 1.375rem; /* Используем rem для скругления */
-  background-color: #fff; /* Цвет фона остался без изменений */
+  background-color: var(--background-white); /* Цвет фона остался без изменений */
 
   /* padding: 22px 33px; /* Уменьшил padding справа для лучшей адаптации */
   padding: 1.375rem 2.0625rem; /* Используем rem для внутренних отступов */
@@ -175,8 +177,8 @@
 .send-button {
   /* border-radius: 42px; /* Заменяем на относительное значение */
   border-radius: 2.625rem; /* Используем rem для скругления */
-  background-color: #181818; /* Цвет фона остался без изменений */
-  color: #fff; /* Цвет текста остался без изменений */
+  background-color: var(--black-button);
+  color: var(--light-text-primary);
 
   /* padding: 16px; /* Заменяем на относительное значение */
   padding: 1rem; /* Используем rem для внутренних отступов */

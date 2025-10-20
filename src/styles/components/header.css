@@ -4,7 +4,7 @@
 .header {
   /* padding: 18px 0; /* Заменяем на относительное значение */
   padding-block: clamp(1rem, 2.5vw, 1.125rem); /* Отступы сверху и снизу */
-  background-color: #181818; /* Цвет фона остался без изменений */
+  background-color: var(--color-black);
 }
 
 .header__wrapper {
@@ -37,7 +37,7 @@
 
   /* font-size: 14px; /* Заменяем на относительное значение */
   font-size: clamp(0.875rem, 2vw, 0.875rem); /* Адаптивный размер шрифта */
-  color: white; /* Цвет текста */
+  color: var(--color-white);
   white-space: nowrap; /* Попробуем не переносить текст внутри */
 }
 
@@ -102,4 +102,9 @@
     /* gap: 20px; /* Умеренный отступ между иконками */
     gap: clamp(0.875rem, 2.5vw, 1.25rem); /* Адаптивный отступ */
   }
+}
+
+.theme-toggle {
+  border-radius: 20px;
+  border: none;
 }

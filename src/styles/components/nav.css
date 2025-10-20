@@ -5,7 +5,7 @@
   /* padding: 40px 0; /* Заменяем на относительное значение */
   padding-block: clamp(1.5rem, 4vw, 2.5rem); /* Отступы сверху и снизу */
   backdrop-filter: blur(21px);
-  background: rgb(27 27 27 / 91%); /* Цвет фона остался без изменений */
+  background: var(--color-dark-grey);
 }
 
 .nav__wrapper {
@@ -38,14 +38,14 @@
   /* font-size: 30px; /* Заменяем на относительное значение */
   font-size: clamp(1.5rem, 4vw, 1.875rem); /* Адаптивный размер шрифта */
   font-family: Lato, sans-serif;
-  color: white; /* Цвет текста логотипа */
+  color: var(--color-white);
   white-space: nowrap; /* Попробуем не переносить текст внутри */
 }
 
 .nav__list {
   display: flex;
   list-style: circle;
-
+  color: var(--color-white);
   /* gap: 60px; /* Заменяем на относительное значение */
   gap: clamp(2rem, 6vw, 3.75rem); /* Отступ между пунктами меню */
   margin: 0; /* Убираем стандартные отступы */
@@ -56,7 +56,7 @@
 
 .nav__link {
   text-decoration: none;
-  color: white; /* Цвет текста остался без изменений */
+  color: var(--color-white);
   transition: color 0.3s ease;
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -66,11 +66,11 @@
 }
 
 .nav__link:hover {
-  color: #4eaf4e; /* Цвет при наведении остался без изменений */
+   color: var(--color-green);
 }
 
 .nav__link:focus {
-  color: #4eaf4e; /* Цвет при фокусе остался без изменений */
+  color: var(--color-green);
 }
 
 .nav__contact-container {
@@ -82,12 +82,12 @@
 
   /* height: 59px; /* Заменяем на относительное значение */
   height: clamp(3rem, 6vw, 3.6875rem); /* Адаптивная высота */
-  background: #fff; /* Цвет фона остался без изменений */
+  background: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  color: black; /* Цвет текста остался без изменений */
+  color: var(--color-black);
 
   /* gap: 11px; /* Заменяем на относительное значение */
   gap: clamp(0.5rem, 1.5vw, 0.6875rem); /* Отступ между иконкой и текстом */

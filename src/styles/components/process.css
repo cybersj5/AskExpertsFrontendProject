@@ -2,7 +2,7 @@
 
 /* --- Оставляем цвета без изменений --- */
 .process {
-  background: #fff; /* Цвет фона остался без изменений */
+  background: var(--background-white);
   display: flex;
   align-items: center;
 
@@ -41,7 +41,7 @@
 }
 
 .process-title__container {
-  background: #ffcc4a; /* Цвет фона остался без изменений */
+  background: var(--color-yellow);
 
   /* border-radius: 20px; /* Заменяем на относительное значение */
   border-radius: 1.25rem; /* Используем rem для скругления */
@@ -58,7 +58,7 @@
   line-height: 1.48; /* Заменяем процентный line-height на относительный */
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #181818; /* Цвет текста остался без изменений */
+  color: var(--dark-text-primary);
   margin: 0; /* Убираем стандартные отступы */
 }
 
@@ -68,7 +68,7 @@
   /* font-size: 45px; /* Начальный размер */
   font-size: clamp(2rem, 5vw, 2.8125rem); /* Адаптивный размер шрифта */
   line-height: 1.16; /* Заменяем процентный line-height на относительный */
-  color: #181818; /* Цвет текста остался без изменений */
+  color: var(--dark-text-primary);
 
   /* padding-bottom: 18px; /* Заменяем на относительное значение */
   padding-block-end: clamp(0.75rem, 2vw, 1.125rem); /* Отступ снизу */
@@ -101,7 +101,7 @@
   /* font-size: 20px; /* Начальный размер */
   font-size: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивный размер шрифта */
   line-height: 1.16; /* Заменяем процентный line-height на относительный */
-  color: #181818; /* Цвет текста остался без изменений */
+  color: var(--dark-text-primary);
   margin: 0; /* Убираем стандартные отступы */
 }
 
@@ -111,7 +111,7 @@
   /* font-size: 16px; /* Начальный размер */
   font-size: clamp(0.875rem, 2.5vw, 1rem); /* Адаптивный размер шрифта */
   line-height: 1.48; /* Заменяем процентный line-height на относительный */
-  color: #595566; /* Цвет текста остался без изменений */
+  color: var(--description-primary);
   margin: 0; /* Убираем стандартные отступы */
 }
 

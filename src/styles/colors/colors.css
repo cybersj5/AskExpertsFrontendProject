@@ -1,4 +1,23 @@
 :root {
-  --color-white: #e3e3e3;
-  --color-black: #1d1d1d;
+  /* Базовые цвета (не меняются в темах) */
+  --color-white: #fff;
+  --color-black: #181818;
+  --color-dark-grey: #353535;
+  --color-grey: #595566;
+  --color-green: #4eaf4e;
+  --color-yellow: #ffcc4a;
+  --color-light-grey: #ebebeb;
+  --color-dark-white: #f5f5f5;
+  --color-limpid-white: rgb(255 255 255 / 60%);
+
+  /* Семантические переменные по умолчанию (светлая тема) */
+  --background-grey: var(--color-dark-white);
+  --background-white: var(--color-white);
+  --bacground-limpid-white: var(--color-limpid-white);
+  --dark-text-primary: var(--color-black);
+  --light-text-primary: var(--color-white);
+  --description-primary: var(--color-grey);
+  --card-background: var(--color-white);
+  --card-background-focus: var(--color-black);
+  --black-button: var(--color-black);
 }

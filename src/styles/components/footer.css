@@ -5,7 +5,7 @@
   /* padding: 115px 0 26px; /* Заменяем на относительное значение */
   padding-block: clamp(4rem, 10vw, 7.2rem) clamp(1.5rem, 3vw, 1.6rem); /* Отступ сверху */ /* Отступ снизу */
   padding-inline: 0; /* Убираем боковые отступы, они у wrapper */
-  background-color: #181818; /* Цвет остался без изменений */
+  background-color: var(--color-black);
 }
 
 .footer__wrapper {
@@ -27,7 +27,7 @@
   justify-content: space-between;
   align-items: flex-start; /* Изменили на flex-start */
   flex-direction: row; /* По умолчанию row */
-  border-bottom: 1px solid grey; /* Цвет остался без изменений */
+  border-bottom: 1px solid var(--color-grey);
 
   /* padding-bottom: 55px; /* Заменяем на относительное значение */
   padding-block-end: clamp(2.5rem, 5vw, 3.4rem); /* Отступ снизу */
@@ -45,7 +45,7 @@
 
   /* font-size: 20px; /* Заменяем на относительное значение */
   font-size: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивный размер шрифта */
-  color: white; /* Цвет текста остался без изменений */
+  color: var(--color-white);
 }
 
 .footer__information-container {
@@ -55,7 +55,7 @@
 
   /* gap: 99px; /* Заменяем на относительное значение */
   gap: clamp(3rem, 8vw, 6.2rem); /* Отступ между колонками */
-  border-left: 1px solid grey; /* Цвет остался без изменений */
+  border-left: 1px solid var(--color-grey);
 
   /* padding-left: 171px; /* Заменяем на относительное значение */
   padding-inline-start: clamp(3rem, 12vw, 10.7rem); /* Отступ слева */
@@ -80,7 +80,7 @@
 }
 
 .footer__information-title {
-  color: white; /* Цвет остался без изменений */
+  color: var(--color-white);
   font-family: Lato, sans-serif;
   font-weight: 600;
 
@@ -94,6 +94,7 @@
   padding-inline-start: 0.5rem; /* Заменяем padding-left на относительное значение */
   align-items: flex-start; /* Изменили на flex-start */
   list-style: disc;
+  color: var(--color-white);
 }
 
 .footer__information-link {
@@ -103,7 +104,7 @@
   font-size: 1rem; /* Используем rem для размера шрифта */
   font-family: Lato, sans-serif;
   text-decoration: none;
-  color: white; /* Цвет остался без изменений */
+  color: var(--color-white);
 }
 
 .footer__address-text {
@@ -112,7 +113,7 @@
   /* font-size: 16px; /* Заменяем на относительное значение */
   font-size: 1rem; /* Используем rem для размера шрифта */
   font-family: Lato, sans-serif;
-  color: white; /* Цвет текста остался без изменений */
+  color: var(--color-white);
 }
 
 .footer__button-book {
@@ -121,8 +122,8 @@
 
   /* padding: 15px 23px; /* Заменяем на относительное значение */
   padding: 0.9375rem 1.4375rem; /* Используем rem для внутренних отступов */
-  background: #fff; /* Цвет фона остался без изменений */
-  color: black; /* Цвет текста остался без изменений */
+  background: var(--color-white);
+  color: var(--color-black);
 
   /* font-size: 18px; /* Заменяем на относительное значение */
   font-size: 1.125rem; /* Используем rem для размера шрифта */
@@ -149,7 +150,7 @@
 
   /* height: 3px; /* Заменяем на относительное значение */
   height: 0.1875rem; /* Используем rem для высоты */
-  background: #ffcc4a; /* Цвет остался без изменений */
+  background: var(--color-yellow);
 }
 
 .footer__bottom-container {
@@ -170,7 +171,7 @@
   /* font-size: 16px; /* Заменяем на относительное значение */
   font-size: 1rem; /* Используем rem для размера шрифта */
   font-family: Lato, sans-serif;
-  color: white; /* Цвет текста остался без изменений */
+  color: var(--color-white);
   flex-wrap: wrap; /* Позволяем перенос строк */
 
   /* gap: 5px; /* Заменяем на относительное значение */

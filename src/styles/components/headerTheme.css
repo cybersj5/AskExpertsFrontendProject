@@ -33,7 +33,7 @@
 
 .theme-header__text-container {
   backdrop-filter: blur(11px);
-  background: rgb(255 255 255 / 85%); /* Цвет фона остался без изменений */
+  background: var(--bacground-limpid-white);
 
   /* border-radius: 29px; /* Заменяем на относительное значение */
   border-radius: clamp(1.5rem, 3vw, 1.8rem); /* Адаптивное скругление */
@@ -55,7 +55,7 @@
 }
 
 .theme-header__title-container {
-  background: #ffcc4a; /* Цвет фона остался без изменений */
+  background: var(--color-yellow);
 
   /* border-radius: 20px; /* Заменяем на относительное значение */
   border-radius: 1.25rem; /* Используем rem для скругления */
@@ -72,7 +72,7 @@
   line-height: 1.48; /* Заменяем процентный line-height на относительный */
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #181818; /* Цвет текста остался без изменений */
+  color: var(--color-black);
   margin: 0; /* Убираем стандартные отступы */
 }
 
@@ -82,7 +82,7 @@
   /* font-size: 50px; /* Начальный размер */
   font-size: clamp(2rem, 6vw, 3.125rem); /* Адаптивный размер шрифта */
   line-height: 1.16; /* Заменяем процентный line-height на относительный */
-  color: #181818; /* Цвет текста остался без изменений */
+  color: var(--dark-text-primary);
   margin: 0; /* Убираем стандартные отступы */
 }
 

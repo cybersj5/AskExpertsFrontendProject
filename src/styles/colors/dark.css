@@ -1,6 +1,13 @@
-:root {
+[data-theme='dark'] {
   color-scheme: dark;
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+  --background-grey: var(--color-black);
+  --background-white: var(--color-dark-grey);
+  --bacground-limpid-white: rgb(35 35 35 / 70%);
+  --dark-text-primary: var(--color-white);
+  --light-text-primary: var(--color-white);
+  --description-primary: var(--color-dark-white);
+  --card-background: var(--color-dark-grey);
+  --card-background-focus: var(--color-green);
+  --black-button: var(--color-dark-grey);
 }
