@@ -1,70 +1,202 @@
+/* process.css */
+
+/* --- Оставляем цвета без изменений --- */
 .process {
-  background: #fff;
+  background: #fff; /* Цвет фона остался без изменений */
   display: flex;
   align-items: center;
-  padding: 150px 0;
+
+  /* padding: 150px 0; /* Заменяем на относительное значение */
+  padding-block: clamp(5rem, 15vw, 9.375rem); /* Отступы сверху и снизу */
 }
 
 .process__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* или center на мобильных */
   align-items: center;
-  gap: 84px;
+
+  /* gap: 84px; /* Заменяем на относительное значение */
+  gap: clamp(3rem, 10vw, 5.25rem); /* Адаптивный отступ */
+  box-sizing: border-box;
+
+  /* max-width: 1200px; /* Добавим максимальную ширину */
+  max-width: 75rem; /* 1200px / 16px = 75rem */
+  margin: 0 auto; /* Центрируем */
+
+  /* padding: 0 20px; /* Добавим отступы по бокам */
+  padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Боковые отступы */
+  flex-wrap: wrap; /* Позволим элементам переноситься */
 }
 
 .process__container {
   display: flex;
-  align-items: start;
+  align-items: flex-start; /* Изменили на flex-start */
   flex-direction: column;
-  gap: 21px;
+
+  /* gap: 21px; /* Начальный отступ */
+  gap: clamp(1rem, 3vw, 1.3125rem); /* Адаптивный отступ */
+  flex: 1; /* Занимает доступное пространство */
+  min-width: 0; /* Позволяет сжиматься */
+  width: 100%; /* Занимает всю ширину wrapper */
 }
 
 .process-title__container {
-  background: #ffcc4a;
-  border-radius: 20px;
-  padding: 0 16px;
+  background: #ffcc4a; /* Цвет фона остался без изменений */
+
+  /* border-radius: 20px; /* Заменяем на относительное значение */
+  border-radius: 1.25rem; /* Используем rem для скругления */
+
+  /* padding: 0 16px; /* Заменяем на относительное значение */
+  padding-inline: 1rem; /* Используем rem для внутренних отступов */
 }
 
 .process__title {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 148%;
+
+  /* font-size: 16px; /* Начальный размер */
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Адаптивный размер шрифта */
+  line-height: 1.48; /* Заменяем процентный line-height на относительный */
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #181818;
+  color: #181818; /* Цвет текста остался без изменений */
+  margin: 0; /* Убираем стандартные отступы */
 }
 
 .process__text {
   font-weight: 700;
-  font-size: 45px;
-  line-height: 116%;
-  color: #181818;
-  padding-bottom: 18px;
+
+  /* font-size: 45px; /* Начальный размер */
+  font-size: clamp(2rem, 5vw, 2.8125rem); /* Адаптивный размер шрифта */
+  line-height: 1.16; /* Заменяем процентный line-height на относительный */
+  color: #181818; /* Цвет текста остался без изменений */
+
+  /* padding-bottom: 18px; /* Заменяем на относительное значение */
+  padding-block-end: clamp(0.75rem, 2vw, 1.125rem); /* Отступ снизу */
+  margin: 0; /* Убираем стандартные отступы */
 }
 
 .process__step {
   display: flex;
-  align-items: start;
-  gap: 22px;
+  align-items: flex-start; /* Изменили на flex-start */
+
+  /* gap: 22px; /* Начальный отступ */
+  gap: clamp(1rem, 3vw, 1.375rem); /* Адаптивный отступ */
+  width: 100%; /* Занимает всю ширину container */
 }
 
 .process-text__container {
   display: flex;
-  align-items: start;
-  gap: 9px;
+  align-items: flex-start; /* Изменили на flex-start */
+
+  /* gap: 9px; /* Начальный отступ */
+  gap: clamp(0.4rem, 1.5vw, 0.5625rem); /* Адаптивный отступ */
   flex-direction: column;
+  flex: 1; /* Занимает доступное пространство */
+  min-width: 0; /* Позволяет сжиматься */
 }
 
 .step__title {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 116%;
-  color: #181818;
+
+  /* font-size: 20px; /* Начальный размер */
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивный размер шрифта */
+  line-height: 1.16; /* Заменяем процентный line-height на относительный */
+  color: #181818; /* Цвет текста остался без изменений */
+  margin: 0; /* Убираем стандартные отступы */
 }
 
 .step__text {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 148%;
-  color: #595566;
+
+  /* font-size: 16px; /* Начальный размер */
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* Адаптивный размер шрифта */
+  line-height: 1.48; /* Заменяем процентный line-height на относительный */
+  color: #595566; /* Цвет текста остался без изменений */
+  margin: 0; /* Убираем стандартные отступы */
+}
+
+/* --- Адаптивность (обновлено) --- */
+
+/* --- Смартфоны --- */
+@media (width <= 47.98rem) {
+  /* 767.98px = 47.98rem */
+  .process {
+    /* padding: 50px 0; /* Уменьшаем отступы */
+    padding-block: clamp(2.5rem, 10vw, 3.125rem); /* Адаптивные отступы */
+  }
+
+  .process__wrapper {
+    /* padding: 0 15px; /* Уменьшаем боковые отступы */
+    padding-inline: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивные боковые отступы */
+    flex-direction: column; /* Элементы вертикально */
+
+    /* gap: 40px; /* Увеличиваем отступ между основными блоками */
+    gap: clamp(2rem, 6vw, 2.5rem); /* Адаптивный отступ */
+    justify-content: center; /* Центрируем содержимое */
+  }
+
+  .process__text {
+    /* font-size: 32px; /* Уменьшаем размер шрифта заголовка */
+    font-size: clamp(1.75rem, 5vw, 2rem); /* Адаптивный размер шрифта */
+
+    /* padding-bottom: 15px; /* Уменьшаем отступ снизу */
+    padding-block-end: clamp(0.5rem, 2vw, 0.9375rem); /* Адаптивный отступ снизу */
+    text-align: center; /* Центрируем текст заголовка */
+  }
+
+  .process__step {
+    flex-direction: column; /* Иконка и текст вертикально */
+
+    /* gap: 15px; /* Уменьшаем отступ между иконкой и текстом */
+    gap: clamp(0.75rem, 2.5vw, 0.9375rem); /* Адаптивный отступ */
+  }
+
+  .step__title {
+    /* font-size: 18px; /* Уменьшаем размер шрифта заголовка шага */
+    font-size: clamp(0.9375rem, 3vw, 1.125rem); /* Адаптивный размер шрифта */
+    text-align: center; /* Центрируем текст заголовка шага */
+  }
+
+  .step__text {
+    /* font-size: 14px; /* Уменьшаем размер шрифта текста шага */
+    font-size: clamp(0.8125rem, 2.5vw, 0.875rem); /* Адаптивный размер шрифта */
+    text-align: center; /* Центрируем текст шага */
+  }
+}
+
+/* --- Планшеты --- */
+@media (width >= 48rem) and (width <= 63.98rem) {
+  /* 768px - 1023.98px */
+  .process {
+    /* padding: 80px 0; /* Умеренные отступы */
+    padding-block: clamp(4rem, 12vw, 5rem); /* Адаптивные отступы */
+  }
+
+  .process__wrapper {
+    /* padding: 0 20px; /* Стандартные боковые отступы */
+    padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивные боковые отступы */
+
+    /* gap: 40px; /* Умеренный отступ */
+    gap: clamp(1.5rem, 5vw, 2.5rem); /* Адаптивный отступ */
+  }
+
+  .process__text {
+    /* font-size: 36px; /* Умеренный размер шрифта заголовка */
+    font-size: clamp(1.875rem, 4.5vw, 2.25rem); /* Адаптивный размер шрифта */
+  }
+
+  .process__step {
+    /* gap: 18px; /* Умеренный отступ между иконкой и текстом */
+    gap: clamp(0.875rem, 2.5vw, 1.125rem); /* Адаптивный отступ */
+  }
+
+  .step__title {
+    /* font-size: 19px; /* Умеренный размер шрифта заголовка шага */
+    font-size: clamp(0.9375rem, 2.5vw, 1.1875rem); /* Адаптивный размер шрифта */
+  }
+
+  .step__text {
+    /* font-size: 15px; /* Умеренный размер шрифта текста шага */
+    font-size: clamp(0.8125rem, 2.5vw, 0.9375rem); /* Адаптивный размер шрифта */
+  }
 }

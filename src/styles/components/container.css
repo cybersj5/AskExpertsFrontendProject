@@ -1,34 +1,63 @@
 .container {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: auto;
-  margin-left: auto;
+
+  /* padding-left: 8px; /* Заменяем на относительное значение */
+  padding-inline: 0.5rem; /* Используем rem */
+
+  /* padding-right: 8px; /* Заменяем на относительное значение */
+
+  /* Используем rem */
+  margin-inline: auto; /* Используем логические свойства */ /* Используем логические свойства */
+
+  /* max-width: 100%; /* Оставляем как есть */
   max-width: 100%;
 }
 
-@media (--sm-viewport) {
+/* --- sm --- */
+
+/* @media (--sm-viewport) { /* Заменяем пользовательские медиа-функции */
+@media (width >= 36rem) {
+  /* 576px / 16px = 36rem */
   .container {
-    max-width: 576px;
+    /* max-width: 576px; /* Заменяем на относительное значение */
+    max-width: 36rem; /* Используем rem */
   }
 }
 
-@media (--md-viewport) {
+/* --- md --- */
+
+/* @media (--md-viewport) { /* Заменяем пользовательские медиа-функции */
+@media (width >= 48rem) {
+  /* 768px / 16px = 48rem */
   .container {
-    max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* max-width: 768px; /* Заменяем на относительное значение */
+    max-width: 48rem; /* Используем rem */
+
+    /* padding-left: 16px; /* Заменяем на относительное значение */
+    padding-inline: 1rem; /* Используем rem */
+
+    /* padding-right: 16px; /* Заменяем на относительное значение */
   }
 }
 
-@media (--lg-viewport) {
+/* --- lg --- */
+
+/* @media (--lg-viewport) { /* Заменяем пользовательские медиа-функции */
+@media (width >= 64rem) {
+  /* 1024px / 16px = 64rem */
   .container {
-    max-width: 1024px;
+    /* max-width: 1024px; /* Заменяем на относительное значение */
+    max-width: 64rem; /* Используем rem */
   }
 }
 
-@media (--xl-viewport) {
+/* --- xl --- */
+
+/* @media (--xl-viewport) { /* Заменяем пользовательские медиа-функции */
+@media (width >= 82rem) {
+  /* 1312px / 16px = 82rem */
   .container {
-    max-width: 1312px;
+    /* max-width: 1312px; /* Заменяем на относительное значение */
+    max-width: 82rem; /* Используем rem */
   }
 }
