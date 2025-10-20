@@ -1,88 +1,172 @@
+/* contacts.css */
+
+/* --- Оставляем цвета без изменений --- */
 .contacts {
-  padding: 150px 0;
+  /* padding: 150px 0; /* Заменяем на относительное значение */
+  padding-block: clamp(5rem, 15vw, 10rem); /* Отступы сверху и снизу: от 5rem до 10rem в зависимости от ширины экрана */
+  
+  
+  
   background-color: var(--background-white);
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .contacts__container {
   display: flex;
-  align-items: center;
-  gap: 91px;
+  align-items: flex-start; /* Изменили на flex-start */
+
+  /* gap: 91px; /* Заменяем на относительное значение */
+  gap: clamp(2rem, 6vw, 6rem); /* Отступ между описанием и формой */
+  width: 100%;
+  max-width: 75rem; /* Заменяем жёсткую max-width (1200px) на относительную (75rem) */
+
+  /* padding: 0 20px; /* Заменяем на относительное значение */
+  padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Боковые отступы */
+  box-sizing: border-box;
 }
 
 .contacts__description {
   display: flex;
   flex-direction: column;
-  gap: 38px;
+
+  /* gap: 38px; /* Заменяем на относительное значение */
+  gap: clamp(1.5rem, 3vw, 2.5rem); /* Отступ между элементами описания */
+  flex: 1; /* Занимает доступное пространство */
+  min-width: 0; /* Позволяет сжиматься */
 }
 
-.contacts__description-text {
-  h2 {
-    color: var(--dark-text-primary);
-    font-size: 45px;
-    font-weight: 700;
-  }
+.contacts__description-text h2 {
+ 
+  color: var(--dark-text-primary);
+  /* font-size: 45px; /* Заменяем на относительное значение */
+  font-size: clamp(1.75rem, 4vw, 2.8125rem); /* Адаптивный размер шрифта */
+  font-weight: 700;
+  margin: 0; /* Убираем стандартные отступы */
+}
 
-  p {
-    color: var(--dark-text-primary);
-  }
+.contacts__description-text p {
+  color: var(--dark-text-primary);
+  margin-block: 0.625rem; /* Заменяем margin: 10px 0 на относительное значение */
 }
 
 .contacts__description-info {
-  color: var(--dark-text-primary);
+ color: var(--dark-text-primary);
   display: flex;
   flex-direction: column;
-  gap: 56px;
+
+  /* gap: 56px; /* Заменяем на относительное значение */
+  gap: clamp(2rem, 4vw, 3.5rem); /* Отступ между блоками информации */
 }
 
 .contacts__info-icontext {
   display: flex;
-  gap: 16px;
+  align-items: center; /* Выравнивание по центру по вертикали */
+
+  /* gap: 16px; /* Заменяем на относительное значение */
+  gap: 1rem; /* Используем rem для отступа между иконкой и текстом */
 }
 
 .info-icontext__p {
-  font-size: 20px;
+  /* font-size: 20px; /* Заменяем на относительное значение */
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивный размер шрифта */
   font-weight: 600;
+  margin: 0; /* Убираем стандартные отступы */
 }
 
 .contacts__form-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+
+  /* gap: 24px; /* Заменяем на относительное значение */
+  gap: clamp(1rem, 2.5vw, 1.5rem); /* Отступ между элементами формы */
+  flex: 1; /* Занимает доступное пространство */
+  min-width: 0; /* Позволяет сжиматься */
 }
 
 .form {
   display: grid;
-  grid-template-columns: repeat(2, 320px);
-  gap: 24px;
+
+  /* grid-template-columns: 1fr; /* По умолчанию одна колонка */
+  grid-template-columns: 1fr; /* Всегда одна колонка по умолчанию */
+
+  /* gap: 24px; /* Заменяем на относительное значение */
+  gap: clamp(1rem, 2.5vw, 1.5rem); /* Отступ между элементами формы */
+}
+
+/* Для больших экранов */
+@media (width >= 48rem) {
+  /* 768px = 48rem */
+  .form {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+
+    /* grid-template-columns: repeat(2, minmax(320px, 1fr)); /* Ограничиваем ширину, если нужно */
+  }
 }
 
 .form__label-input {
   display: flex;
   flex-direction: column;
+  width: 100%; /* Занимает всю ширину ячейки */
 }
 
 .form__label {
   color: var(--dark-text-primary);
+
+  /* margin-bottom: 8px; /* Заменяем на относительное значение */
+  margin-block-end: 0.5rem; /* Отступ между лейблом и инпутом */
 }
 
 .form__input {
-  border-radius: 54px;
+  /* border-radius: 54px; /* Заменяем на относительное значение */
+  border-radius: 3.375rem; /* Используем rem для скругления */
   background-color: var(--background-white);
   border: 1px solid var(--color-light-grey);
-  padding: 22px 33px;
+
+  /* padding: 22px 33px; /* Заменяем на относительное значение */
+  padding: 1.375rem 2.0625rem; /* Используем rem для внутренних отступов */
+
+  /* font-size: 16px; /* Заменяем на относительное значение */
+  font-size: 1rem; /* Используем rem для размера шрифта */
+  outline: none; /* Убираем стандартный outline */
+  transition: border-color 0.3s ease; /* Плавный переход для бордера */
+  box-sizing: border-box; /* Включаем padding в ширину */
+  min-width: 0; /* Позволяет сжиматься */
+  width: 100%; /* Убедимся, что инпут занимает всю ширину родителя */
+}
+
+.form__input:focus {
+  border-color: #ffcc4a; /* Цвет бордера при фокусе */
 }
 
 .input-message {
   border: 1px solid var(--color-light-grey);
   width: 100%;
-  border-radius: 22px;
-  background-color: var(--background-white);
-  padding: 22px 70px 111px 33px;
+
+  /* border-radius: 22px; /* Заменяем на относительное значение */
+  border-radius: 1.375rem; /* Используем rem для скругления */
+  background-color: var(--background-white); /* Цвет фона остался без изменений */
+
+  /* padding: 22px 33px; /* Уменьшил padding справа для лучшей адаптации */
+  padding: 1.375rem 2.0625rem; /* Используем rem для внутренних отступов */
+
+  /* font-size: 16px; /* Заменяем на относительное значение */
+  font-size: 0.8rem; /* Используем rem для размера шрифта */
+  outline: none; /* Убираем стандартный outline */
+  transition: border-color 0.3s ease; /* Плавный переход для бордера */
+  box-sizing: border-box; /* Включаем padding в ширину */
+
+  /* min-height: 111px; /* Заменяем на относительное значение */
+  min-height: 6.9375rem; /* Используем rem для минимальной высоты */
+  resize: vertical; /* Позволяет изменять только по вертикали */
+}
+
+.input-message:focus {
+  border-color: #ffcc4a; /* Цвет бордера при фокусе */
 }
 
 .label-input__message {
@@ -91,9 +175,105 @@
 }
 
 .send-button {
-  border-radius: 42px;
+  /* border-radius: 42px; /* Заменяем на относительное значение */
+  border-radius: 2.625rem; /* Используем rem для скругления */
   background-color: var(--black-button);
-  padding: 16px;
-  width: 25%;
   color: var(--light-text-primary);
+
+  /* padding: 16px; /* Заменяем на относительное значение */
+  padding: 1rem; /* Используем rem для внутренних отступов */
+  width: 30%; /* Ширина 100% для мобильных */
+
+  /* max-width: 300px; /* Заменяем на относительное значение */
+  max-width: 18.75rem; /* Используем rem для максимальной ширины */
+
+  /* margin-top: 10px; /* Заменяем на относительное значение */
+  margin-block-start: 0.625rem; /* Отступ сверху */
+  border: none; /* Убираем бордер кнопки */
+  cursor: pointer; /* Курсор указателя */
+
+  /* font-size: 16px; /* Заменяем на относительное значение */
+  font-size: 1rem; /* Используем rem для размера шрифта */
+  font-weight: 600; /* Жирность шрифта */
+  transition: background-color 0.3s ease; /* Плавный переход для фона */
+  align-self: flex-start; /* Выравнивание по левому краю */
+}
+
+.send-button:hover {
+  background-color: #333; /* Цвет фона при наведении */
+}
+
+/* --- Адаптивность (обновлено) --- */
+
+/* --- Смартфоны --- */
+@media (width <= 47.98rem) {
+  /* 767.98px = 47.98rem */
+  .contacts {
+    /* padding: 50px 0; /* Уменьшаем отступы */
+    padding-block: clamp(3rem, 10vw, 5rem); /* Адаптивные отступы */
+  }
+
+  .contacts__container {
+    flex-direction: column; /* Элементы друг под другом */
+
+    /* gap: 50px; /* Уменьшаем отступ между секциями */
+    gap: clamp(2rem, 5vw, 3rem); /* Адаптивный отступ */
+
+    /* padding: 0 15px; /* Уменьшаем боковые отступы */
+    padding-inline: clamp(0.75rem, 2vw, 1rem); /* Адаптивные боковые отступы */
+  }
+
+  .contacts__description-text h2 {
+    /* font-size: 28px; /* Уменьшаем размер заголовка */
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Адаптивный размер заголовка */
+  }
+
+  .form {
+    grid-template-columns: 1fr; /* Всегда одна колонка */
+  }
+
+  .send-button {
+    width: 100%; /* Кнопка на всю ширину */
+
+    /* max-width: none; /* Сбрасываем максимальную ширину */
+    max-width: 100%; /* Устанавливаем max-width 100% */
+    align-self: center; /* Центрируем кнопку */
+  }
+
+  /* Уменьшаем размер шрифта в info-icontext */
+  .info-icontext__p {
+    /* font-size: 16px; */
+    font-size: 1rem; /* Используем rem */
+  }
+}
+
+/* --- Планшеты --- */
+@media (width >= 48rem) and (width <= 63.98rem) {
+  /* 768px - 1023.98px */
+  .contacts {
+    /* padding: 80px 0; /* Умеренные отступы */
+    padding-block: clamp(4rem, 12vw, 6rem); /* Адаптивные отступы */
+  }
+
+  .contacts__container {
+    /* gap: 40px; /* Умеренный отступ */
+    gap: clamp(2rem, 4vw, 2.5rem); /* Адаптивный отступ */
+
+    /* padding: 0 20px; /* Стандартные боковые отступы */
+    padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивные боковые отступы */
+  }
+
+  .contacts__description-text h2 {
+    /* font-size: 36px; /* Средний размер заголовка */
+    font-size: clamp(1.75rem, 4vw, 2.25rem); /* Адаптивный размер заголовка */
+  }
+
+  /* .form остаётся с 2 колонками */
+  .send-button {
+    align-self: center; /* Центрируем кнопку */
+    width: auto; /* Автоматическая ширина */
+
+    /* max-width: 250px; /* Умеренная максимальная ширина */
+    max-width: 15.625rem; /* Используем rem для максимальной ширины */
+  }
 }

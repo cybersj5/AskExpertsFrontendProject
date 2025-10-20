@@ -1,5 +1,9 @@
+/* header.css */
+
+/* --- Оставляем цвета без изменений --- */
 .header {
-  padding: 18px 0;
+  /* padding: 18px 0; /* Заменяем на относительное значение */
+  padding-block: clamp(1rem, 2.5vw, 1.125rem); /* Отступы сверху и снизу */
   background-color: var(--color-black);
 }
 
@@ -7,24 +11,97 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+
+  /* max-width: 1200px; /* Заменяем на относительное значение */
+  max-width: 75rem; /* 1200px / 16px = 75rem */
+  margin: 0 auto; /* Центрируем */
+
+  /* padding: 0 20px; /* Заменяем на относительное значение */
+  padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Боковые отступы */
+  flex-wrap: wrap; /* Позволим элементам переноситься при нехватке места */
+
+  /* gap: 10px; /* Заменяем на относительное значение */
+  gap: clamp(0.5rem, 1.5vw, 0.625rem); /* Отступ между элементами в wrapper */
 }
 
 .header__icon-text {
   margin: 0;
-  gap: 10px;
+
+  /* gap: 10px; /* Заменяем на относительное значение */
+  gap: clamp(0.5rem, 1.5vw, 0.625rem); /* Отступ между иконкой и текстом */
   align-items: center;
   display: flex;
   font-family: Lato, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+
+  /* font-size: 14px; /* Заменяем на относительное значение */
+  font-size: clamp(0.875rem, 2vw, 0.875rem); /* Адаптивный размер шрифта */
   color: var(--color-white);
+  white-space: nowrap; /* Попробуем не переносить текст внутри */
 }
 
 .header__socials {
   margin: 0;
-  gap: 25px;
+
+  /* gap: 25px; /* Заменяем на относительное значение */
+  gap: clamp(1rem, 3vw, 1.5625rem); /* Отступ между иконками */
   align-items: center;
   display: flex;
+  flex-wrap: wrap; /* Позволим иконкам переноситься на следующую строку */
+  justify-content: center; /* Центрируем иконки, если они переносятся */
+}
+
+/* --- Адаптивность (обновлено) --- */
+
+/* --- Смартфоны --- */
+@media (width <= 47.98rem) {
+  /* 767.98px = 47.98rem */
+  .header {
+    /* padding: 10px 0; /* Уменьшаем вертикальный отступ */
+    padding-block: clamp(0.625rem, 2vw, 0.625rem); /* Адаптивные отступы */
+  }
+
+  .header__wrapper {
+    /* padding: 0 15px; /* Уменьшаем боковые отступы */
+    padding-inline: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивные боковые отступы */
+    flex-direction: column; /* Элементы вертикально */
+    align-items: center; /* Центрируем элементы */
+
+    /* gap: 15px; /* Увеличиваем отступ между основными блоками */
+    gap: clamp(0.75rem, 2.5vw, 0.9375rem); /* Адаптивный отступ */
+  }
+
+  .header__socials {
+    /* gap: 15px; /* Уменьшаем отступ между иконками */
+    gap: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивный отступ */
+    justify-content: center; /* Центрируем иконки */
+  }
+
+  .header__icon-text {
+    justify-content: center; /* Центрируем текст и иконку */
+    text-align: center; /* Выравнивание текста по центру */
+    flex-wrap: wrap; /* Позволим переноситься тексту */
+  }
+}
+
+/* --- Планшеты --- */
+@media (width >= 48rem) and (width <= 63.98rem) {
+  /* 768px - 1023.98px */
+  .header__wrapper {
+    /* padding: 0 20px; /* Стандартные боковые отступы */
+    padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивные боковые отступы */
+  }
+
+  .header__icon-text {
+    /* font-size: 13px; /* Немного уменьшаем размер шрифта */
+    font-size: clamp(0.8125rem, 1.8vw, 0.8125rem); /* Адаптивный размер шрифта */
+  }
+
+  .header__socials {
+    /* gap: 20px; /* Умеренный отступ между иконками */
+    gap: clamp(0.875rem, 2.5vw, 1.25rem); /* Адаптивный отступ */
+  }
 }
 
 .theme-toggle {
