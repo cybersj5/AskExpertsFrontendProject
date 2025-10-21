@@ -75,7 +75,14 @@
   margin: 0; /* Убираем стандартные отступы */
 }
 
-.process__step {
+.process__list {
+  gap: clamp(1rem, 3vw, 1.3125rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step {
   display: flex;
   align-items: flex-start; /* Изменили на flex-start */
 
@@ -84,7 +91,7 @@
   width: 100%; /* Занимает всю ширину container */
 }
 
-.process-text__container {
+.step__text {
   display: flex;
   align-items: flex-start; /* Изменили на flex-start */
 
@@ -105,7 +112,7 @@
   margin: 0; /* Убираем стандартные отступы */
 }
 
-.step__text {
+.step__description {
   font-weight: 400;
 
   /* font-size: 16px; /* Начальный размер */
@@ -144,7 +151,7 @@
     text-align: center; /* Центрируем текст заголовка */
   }
 
-  .process__step {
+  .step {
     flex-direction: column; /* Иконка и текст вертикально */
 
     /* gap: 15px; /* Уменьшаем отступ между иконкой и текстом */
@@ -157,7 +164,7 @@
     text-align: center; /* Центрируем текст заголовка шага */
   }
 
-  .step__text {
+  .step__description {
     /* font-size: 14px; /* Уменьшаем размер шрифта текста шага */
     font-size: clamp(0.8125rem, 2.5vw, 0.875rem); /* Адаптивный размер шрифта */
     text-align: center; /* Центрируем текст шага */
@@ -185,7 +192,7 @@
     font-size: clamp(1.875rem, 4.5vw, 2.25rem); /* Адаптивный размер шрифта */
   }
 
-  .process__step {
+  .step {
     /* gap: 18px; /* Умеренный отступ между иконкой и текстом */
     gap: clamp(0.875rem, 2.5vw, 1.125rem); /* Адаптивный отступ */
   }
@@ -195,7 +202,7 @@
     font-size: clamp(0.9375rem, 2.5vw, 1.1875rem); /* Адаптивный размер шрифта */
   }
 
-  .step__text {
+  .step__description {
     /* font-size: 15px; /* Умеренный размер шрифта текста шага */
     font-size: clamp(0.8125rem, 2.5vw, 0.9375rem); /* Адаптивный размер шрифта */
   }

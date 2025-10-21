@@ -9,5 +9,5 @@
   --description-primary: var(--color-dark-white);
   --card-background: var(--color-dark-grey);
   --card-background-focus: var(--color-green);
-  --black-button: var(--color-dark-grey);
+  --black-button: var(--color-black);
 }

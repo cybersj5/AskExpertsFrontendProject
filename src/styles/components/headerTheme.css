@@ -2,7 +2,8 @@
 
 /* --- Оставляем цвета и фон без изменений --- */
 .theme-header {
-  background-image: url('./src/assets/images/headerThemeBackground.png'); /* Фоновое изображение осталось без изменений */
+  /* background-image: url('./src/assets/images/headerThemeBackground.png'); Фоновое изображение осталось без изменений */
+  background-image: url('../../assets/images/headerThemeBackground.png'); /* Фоновое изображение осталось без изменений */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

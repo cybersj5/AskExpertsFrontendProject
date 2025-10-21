@@ -80,6 +80,12 @@
   table-layout: fixed; /* Фиксированная ширина ячеек */
 }
 
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.75rem, 2.5vw, 1.25rem);
+}
+
 .service-card {
   background: var(--card-background);
 

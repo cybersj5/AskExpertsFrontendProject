@@ -117,11 +117,10 @@
 }
 
 .footer__button-book {
-  /* border-radius: 42px; /* Заменяем на относительное значение */
   border-radius: 2.625rem; /* Используем rem для скругления */
 
   /* padding: 15px 23px; /* Заменяем на относительное значение */
-  padding: 0.9375rem 1.4375rem; /* Используем rem для внутренних отступов */
+  padding: 0.9375rem; /* Используем rem для внутренних отступов */
   background: var(--color-white);
   color: var(--color-black);
 
