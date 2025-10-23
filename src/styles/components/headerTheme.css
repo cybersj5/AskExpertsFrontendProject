@@ -1,20 +1,11 @@
-/* headerTheme.css */
-
-/* --- Оставляем цвета и фон без изменений --- */
 .theme-header {
-  /* background-image: url('./src/assets/images/headerThemeBackground.png'); Фоновое изображение осталось без изменений */
-  background-image: url('../../assets/images/headerThemeBackground.png'); /* Фоновое изображение осталось без изменений */
-  background-repeat: no-repeat;
+  background-image: url('./src/assets/images/headerThemeBackground.png');
   background-size: cover;
   background-position: center;
-
-  /* padding: 170px 0; /* Заменяем на относительное значение */
-  padding-block: clamp(5rem, 15vw, 10rem); /* Отступы сверху и снизу */
+  padding-block: clamp(5rem, 15vw, 10rem);
   display: flex;
   align-items: center;
-
-  /* min-height: 50vh; /* Добавим минимальную высоту, чтобы контент не "плавал" */
-  min-height: clamp(40vh, 50vh, 60vh); /* Адаптивная минимальная высота */
+  min-height: clamp(40vh, 50vh, 60vh);
 }
 
 .theme-header__wrapper {
@@ -22,157 +13,105 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-
-  /* max-width: 1200px; /* Добавим максимальную ширину */
-  max-width: 75rem; /* 1200px / 16px = 75rem */
-  margin: 0 auto; /* Центрируем */
-
-  /* padding: 0 20px; /* Добавим отступы по бокам */
-  padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Боковые отступы */
-  width: 100%; /* Занимает всю ширину wrapper */
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 2.5vw, 1.25rem);
+  width: 100%;
 }
 
 .theme-header__text-container {
   backdrop-filter: blur(11px);
   background: var(--bacground-limpid-white);
-
-  /* border-radius: 29px; /* Заменяем на относительное значение */
-  border-radius: clamp(1.5rem, 3vw, 1.8rem); /* Адаптивное скругление */
+  border-radius: clamp(1.5rem, 3vw, 1.8rem);
   display: flex;
-  align-items: flex-start; /* Изменили на flex-start */
-
-  /* gap: 21px; /* Заменяем на относительное значение */
-  gap: clamp(1rem, 2.5vw, 1.3rem); /* Адаптивный отступ */
-
-  /* padding: 48px 60px 58px; /* Заменяем на относительное значение */
-  padding: clamp(2.5rem, 5vw, 3rem) clamp(3.5rem, 6vw, 3.75rem) clamp(3rem, 7vw, 3.6rem); /* Адаптивные внутренние отступы */
+  align-items: flex-start;
+  gap: clamp(1rem, 2.5vw, 1.3rem);
+  padding: clamp(2.5rem, 5vw, 3rem) clamp(3.5rem, 6vw, 3.75rem) clamp(3rem, 7vw, 3.6rem);
   flex-direction: column;
-  width: 100%; /* Занимает всю ширину, если нужно */
-
-  /* max-width: 600px; /* Ограничиваем ширину контейнера */
-  max-width: clamp(20rem, 50%, 37.5rem); /* Адаптивная максимальная ширина */
-
-  /* margin: auto; /* Центрируем контейнер, если wrapper не выравнивает */
+  width: 100%;
+  max-width: clamp(20rem, 50%, 37.5rem);
 }
 
 .theme-header__title-container {
   background: var(--color-yellow);
-
-  /* border-radius: 20px; /* Заменяем на относительное значение */
-  border-radius: 1.25rem; /* Используем rem для скругления */
-
-  /* padding: 0 15px; /* Заменяем на относительное значение */
-  padding-inline: 0.9375rem; /* Используем rem для внутренних отступов */
+  border-radius: 1.25rem;
+  padding-inline: 0.9375rem;
 }
 
 .theme-header__tilte {
   font-weight: 400;
-
-  /* font-size: 16px; /* Начальный размер */
-  font-size: clamp(1rem, 2.5vw, 1rem); /* Адаптивный размер шрифта */
-  line-height: 1.48; /* Заменяем процентный line-height на относительный */
+  font-size: clamp(1rem, 2.5vw, 1rem);
+  line-height: 1.48;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-black);
-  margin: 0; /* Убираем стандартные отступы */
+  margin: 0;
 }
 
 .theme-header__text {
   font-weight: 700;
-
-  /* font-size: 50px; /* Начальный размер */
-  font-size: clamp(2rem, 6vw, 3.125rem); /* Адаптивный размер шрифта */
-  line-height: 1.16; /* Заменяем процентный line-height на относительный */
+  font-size: clamp(2rem, 6vw, 3.125rem);
+  line-height: 1.16;
   color: var(--dark-text-primary);
-  margin: 0; /* Убираем стандартные отступы */
+  margin: 0;
 }
 
-/* --- Адаптивность (обновлено) --- */
+/* --- Адаптивность --- */
 
 /* --- Смартфоны --- */
-@media (width <= 47.98rem) {
-  /* 767.98px = 47.98rem */
+@media (width <= 512px) {
   .theme-header {
-    /* padding: 80px 0; /* Уменьшаем отступы */
-    padding-block: clamp(3rem, 10vw, 5rem); /* Адаптивные отступы */
-
-    /* min-height: 40vh; /* Уменьшаем минимальную высоту */
-    min-height: clamp(35vh, 40vh, 45vh); /* Адаптивная минимальная высота */
+    padding-block: clamp(3rem, 10vw, 5rem);
+    min-height: clamp(35vh, 40vh, 45vh);
   }
 
   .theme-header__wrapper {
-    /* padding: 0 15px; /* Уменьшаем боковые отступы */
-    padding-inline: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивные боковые отступы */
-    flex-direction: column; /* Элементы вертикально */
-    justify-content: center; /* Центрируем по горизонтали */
-
-    /* gap: 20px; /* Отступ между wrapper и другими элементами, если есть */
-    gap: clamp(1rem, 3vw, 1.25rem); /* Адаптивный отступ */
+    padding-inline: clamp(0.75rem, 2vw, 0.9375rem);
+    flex-direction: column;
+    justify-content: center;
+    gap: clamp(1rem, 3vw, 1.25rem);
   }
 
   .theme-header__text-container {
-    /* padding: 30px 20px; /* Уменьшаем внутренние отступы */
-    padding: clamp(1.5rem, 4vw, 1.875rem) clamp(1rem, 2.5vw, 1.25rem); /* Адаптивные внутренние отступы */
-
-    /* gap: 15px; /* Уменьшаем отступ между элементами */
-    gap: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивный отступ */
-
-    /* max-width: 100%; /* Сбрасываем максимальную ширину */
-    max-width: 100%; /* Сбрасываем максимальную ширину */
-    width: 100%; /* Занимает всю ширину */
+    padding: clamp(1.5rem, 4vw, 1.875rem) clamp(1rem, 2.5vw, 1.25rem);
+    gap: clamp(0.75rem, 2vw, 0.9375rem);
+    max-width: 100%;
+    width: 100%;
   }
 
   .theme-header__tilte {
-    /* font-size: 14px; /* Уменьшаем размер шрифта */
-    font-size: clamp(0.875rem, 2.5vw, 0.875rem); /* Адаптивный размер шрифта */
-
-    /* letter-spacing: 0.1em; /* Уменьшаем межбуквенный интервал */
-    letter-spacing: 0.1em; /* Уменьшаем межбуквенный интервал */
+    font-size: clamp(0.875rem, 2.5vw, 0.875rem);
+    letter-spacing: 0.1em;
   }
 
   .theme-header__text {
-    /* font-size: 32px; /* Уменьшаем размер шрифта */
-    font-size: clamp(1.5rem, 5vw, 2rem); /* Адаптивный размер шрифта */
-
-    /* line-height: 1.3; /* Убираем line-height в процентах */
-    line-height: 1.3; /* Убираем line-height в процентах */
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    line-height: 1.3;
   }
 }
 
 /* --- Планшеты --- */
-@media (width >= 48rem) and (width <= 63.98rem) {
-  /* 768px - 1023.98px */
+@media (width <= 822px) {
   .theme-header {
-    /* padding: 120px 0; /* Умеренные отступы */
-    padding-block: clamp(4rem, 12vw, 6rem); /* Адаптивные отступы */
-
-    /* min-height: 45vh; /* Умеренная минимальная высота */
-    min-height: clamp(40vh, 45vh, 50vh); /* Адаптивная минимальная высота */
+    padding-block: clamp(4rem, 12vw, 6rem);
+    min-height: clamp(40vh, 45vh, 50vh);
   }
 
   .theme-header__wrapper {
-    /* padding: 0 20px; /* Стандартные боковые отступы */
-    padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивные боковые отступы */
+    padding-inline: clamp(1rem, 2.5vw, 1.25rem);
   }
 
   .theme-header__text-container {
-    /* padding: 40px 30px; /* Умеренные внутренние отступы */
-    padding: clamp(2rem, 5vw, 2.5rem) clamp(1.5rem, 4vw, 1.875rem); /* Адаптивные внутренние отступы */
-
-    /* gap: 18px; /* Умеренный отступ между элементами */
-    gap: clamp(0.875rem, 2.5vw, 1.125rem); /* Адаптивный отступ */
-
-    /* max-width: 500px; /* Умеренная максимальная ширина */
-    max-width: clamp(25rem, 40%, 31.25rem); /* Адаптивная максимальная ширина */
+    padding: clamp(2rem, 5vw, 2.5rem) clamp(1.5rem, 4vw, 1.875rem);
+    gap: clamp(0.875rem, 2.5vw, 1.125rem);
+    max-width: clamp(25rem, 40%, 31.25rem);
   }
 
   .theme-header__tilte {
-    /* font-size: 15px; /* Умеренный размер шрифта */
-    font-size: clamp(0.9375rem, 2.5vw, 0.9375rem); /* Адаптивный размер шрифта */
+    font-size: clamp(0.9375rem, 2.5vw, 0.9375rem);
   }
 
   .theme-header__text {
-    /* font-size: 40px; /* Умеренный размер шрифта */
-    font-size: clamp(1.75rem, 5vw, 2.5rem); /* Адаптивный размер шрифта */
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
 }

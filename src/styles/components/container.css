@@ -1,63 +1,31 @@
 .container {
   width: 100%;
-
-  /* padding-left: 8px; /* Заменяем на относительное значение */
-  padding-inline: 0.5rem; /* Используем rem */
-
-  /* padding-right: 8px; /* Заменяем на относительное значение */
-
-  /* Используем rem */
-  margin-inline: auto; /* Используем логические свойства */ /* Используем логические свойства */
-
-  /* max-width: 100%; /* Оставляем как есть */
+  padding-inline: 0.5rem;
+  margin-inline: auto;
   max-width: 100%;
 }
 
-/* --- sm --- */
-
-/* @media (--sm-viewport) { /* Заменяем пользовательские медиа-функции */
 @media (width >= 36rem) {
-  /* 576px / 16px = 36rem */
   .container {
-    /* max-width: 576px; /* Заменяем на относительное значение */
-    max-width: 36rem; /* Используем rem */
+    max-width: 36rem;
   }
 }
 
-/* --- md --- */
-
-/* @media (--md-viewport) { /* Заменяем пользовательские медиа-функции */
 @media (width >= 48rem) {
-  /* 768px / 16px = 48rem */
   .container {
-    /* max-width: 768px; /* Заменяем на относительное значение */
-    max-width: 48rem; /* Используем rem */
-
-    /* padding-left: 16px; /* Заменяем на относительное значение */
-    padding-inline: 1rem; /* Используем rem */
-
-    /* padding-right: 16px; /* Заменяем на относительное значение */
+    max-width: 48rem;
+    padding-inline: 1rem;
   }
 }
 
-/* --- lg --- */
-
-/* @media (--lg-viewport) { /* Заменяем пользовательские медиа-функции */
 @media (width >= 64rem) {
-  /* 1024px / 16px = 64rem */
   .container {
-    /* max-width: 1024px; /* Заменяем на относительное значение */
-    max-width: 64rem; /* Используем rem */
+    max-width: 64rem;
   }
 }
 
-/* --- xl --- */
-
-/* @media (--xl-viewport) { /* Заменяем пользовательские медиа-функции */
 @media (width >= 82rem) {
-  /* 1312px / 16px = 82rem */
   .container {
-    /* max-width: 1312px; /* Заменяем на относительное значение */
-    max-width: 82rem; /* Используем rem */
+    max-width: 82rem;
   }
 }

@@ -1,13 +1,8 @@
-/* prices.css */
-
-/* --- Оставляем цвета и фон без изменений --- */
 .prices {
   background: var(--background-grey);
   display: flex;
   align-items: center;
-
-  /* padding: 150px 0; /* Заменяем на относительное значение */
-  padding-block: clamp(5rem, 15vw, 9.375rem); /* Отступы сверху и снизу */
+  padding-block: clamp(5rem, 15vw, 9.375rem);
 }
 
 .prices__wrapper {
@@ -16,103 +11,75 @@
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-
-  /* max-width: 1200px; /* Заменяем на относительное значение */
-  max-width: 75rem; /* 1200px / 16px = 75rem */
-  margin: 0 auto; /* Центрируем */
-
-  /* padding: 0 20px; /* Заменяем на относительное значение */
-  padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Боковые отступы */
-  width: 100%; /* Занимает всю ширину wrapper */
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 2.5vw, 1.25rem);
+  width: 100%;
 }
 
 .prices-title__container {
   background: var(--color-green);
-
-  /* border-radius: 20px; /* Заменяем на относительное значение */
-  border-radius: 1.25rem; /* Используем rem для скругления */
-
-  /* padding: 0 14px; /* Заменяем на относительное значение */
-  padding-inline: 0.875rem; /* Используем rem для внутренних отступов */
+  border-radius: 1.25rem;
+  padding-inline: 0.875rem;
 }
 
 .prices__text {
   font-weight: 700;
-
-  /* font-size: 45px; /* Заменяем на относительное значение */
-  font-size: clamp(2rem, 5vw, 2.8125rem); /* Адаптивный размер шрифта */
-  line-height: 1.16; /* Заменяем процентный line-height на относительный */
+  font-size: clamp(2rem, 5vw, 2.8125rem);
+  line-height: 1.16;
   text-align: center;
   color: var(--dark-text-primary);
-
-  /* padding-top: 22px; /* Заменяем на относительное значение */
-  padding-block-start: clamp(1rem, 2.5vw, 1.375rem); /* Отступ сверху */
+  padding-block-start: clamp(1rem, 2.5vw, 1.375rem);
 }
 
 .prices__container {
   display: flex;
-  justify-content: center; /* Центрируем при переносе */
-  align-items: center; /* Выравнивание по высоте */
-
-  /* gap: 49px; /* Заменяем на относительное значение */
-  gap: clamp(2rem, 5vw, 3.0625rem); /* Адаптивный отступ */
-
-  /* padding-top: 34px; /* Заменяем на относительное значение */
-  padding-block-start: clamp(1.5rem, 4vw, 2.125rem); /* Отступ сверху */
-  width: 100%; /* Занимает всю ширину wrapper */
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 3.0625rem);
+  padding-block-start: clamp(1.5rem, 4vw, 2.125rem);
+  width: 100%;
 }
 
-/* --- Адаптивность (обновлено) --- */
+/* --- Адаптивность --- */
 
 /* --- Смартфоны --- */
-@media (width <= 47.98rem) {
-  /* 767.98px = 47.98rem */
+@media (width <= 512px) {
   .prices {
-    /* padding: 50px 0; /* Уменьшаем отступы */
-    padding-block: clamp(3rem, 10vw, 3.125rem); /* Адаптивные отступы */
+    padding-block: clamp(3rem, 10vw, 3.125rem);
   }
 
   .prices__wrapper {
-    /* padding: 0 15px; /* Уменьшаем боковые отступы */
-    padding-inline: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивные боковые отступы */
+    padding-inline: clamp(0.75rem, 2vw, 0.9375rem);
   }
 
   .prices__text {
-    /* font-size: 32px; /* Уменьшаем размер шрифта заголовка */
-    font-size: clamp(1.75rem, 5vw, 2rem); /* Адаптивный размер шрифта */
-
-    /* padding-top: 15px; /* Уменьшаем отступ сверху */
-    padding-block-start: clamp(0.75rem, 2vw, 0.9375rem); /* Адаптивный отступ сверху */
+    font-size: clamp(1.75rem, 5vw, 2rem);
+    padding-block-start: clamp(0.75rem, 2vw, 0.9375rem);
   }
 
   .prices__container {
-    /* gap: 35px; /* Умеренный отступ между карточками */
-    gap: clamp(1.75rem, 4.5vw, 2.1875rem); /* Адаптивный отступ */
+    gap: clamp(1.75rem, 4.5vw, 2.1875rem);
     flex-wrap: wrap;
   }
 }
 
 /* --- Планшеты --- */
-@media (width >= 48rem) and (width <= 63.98rem) {
-  /* 768px - 1023.98px */
+@media (width <= 822px) {
   .prices {
-    /* padding: 80px 0; /* Умеренные отступы */
-    padding-block: clamp(4rem, 12vw, 5rem); /* Адаптивные отступы */
+    padding-block: clamp(4rem, 12vw, 5rem);
   }
 
   .prices__wrapper {
-    /* padding: 0 20px; /* Стандартные боковые отступы */
-    padding-inline: clamp(1rem, 2.5vw, 1.25rem); /* Адаптивные боковые отступы */
+    padding-inline: clamp(1rem, 2.5vw, 1.25rem);
   }
 
   .prices__text {
-    /* font-size: 36px; /* Умеренный размер шрифта заголовка */
-    font-size: clamp(1.875rem, 4.5vw, 2.25rem); /* Адаптивный размер шрифта */
+    font-size: clamp(1.875rem, 4.5vw, 2.25rem);
   }
 
   .prices__container {
-    /* gap: 35px; /* Умеренный отступ между карточками */
-    gap: clamp(1.75rem, 4.5vw, 2.1875rem); /* Адаптивный отступ */
+    gap: clamp(1.75rem, 4.5vw, 2.1875rem);
     flex-wrap: wrap;
   }
 }
